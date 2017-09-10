@@ -4,3 +4,58 @@ APLICACIÓN #5: APLICACIÓN CON AUTENTICACIÓN AUTH0
 		Recursos: 
 		- https://auth0.com
 		- https://getbootstrap.com/
+
+
+	CREANDO LA INTERFAZ DE NUESTRA APLICACIÓN
+		
+		1. Añadir Bootstrap a nuestra aplicación
+			src/index.html
+
+		2. Ir a la pagina de bootstrap y copiar el codigo del *navbar 
+			(Navbar text with an inline element)
+			- https://getbootstrap.com/docs/4.0/components/navbar/
+
+		3. Crear el directorio components
+
+		4. Dentro del directorio creado, generar un nuevo componente llamado *navbar
+			ng g c components/navbar -is
+			- Agregamos el selector al componente principal *app.component.html
+
+		5. Generar el componente *home
+			ng g c components/home -is
+
+		6. Generar el componente *precios
+			ng g c components/precios -is
+
+		7. Generar el componente *protegida
+			ng g c components/protegida -is
+
+		8. Crear el fichero de rutas e importarlo en *app.module
+			src/app/app.routes.ts
+
+		9. Agregamos el estilo .main-container
+			src/styles.css
+
+		10. Agregar routerLink y routerLinkActive
+			src/app/components/navbar/navbar.component.html
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
