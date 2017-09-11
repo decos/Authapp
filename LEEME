@@ -148,14 +148,24 @@ APLICACIÓN #5: APLICACIÓN CON AUTENTICACIÓN AUTH0
 		4. Codear en la vista del componente *Protegida lo que nos devuelve en json
 
 
+	PERSONALIZANDO EL LOGIN Y OTRAS OPCIONES
 
+		- Ir a la siguiente ruta:
+			https://manage.auth0.com/#/login_page
 
+		1. Modificar lo siguiente:
+			- <title>Bienvenido</title>
+			- language: 'es',
+			- primaryColor:    'green'
+			
 
+		- Diferentes tipos de logins
+			https://manage.auth0.com/#/connections/social
 
-
-
+		- Documentacion de todas las opciones que puedes poner en el LOG IN
+			https://auth0.com/docs/libraries/lock/v10/customization
 	
-
+	
 
 
 
