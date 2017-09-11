@@ -40,6 +40,46 @@ APLICACIÓN #5: APLICACIÓN CON AUTENTICACIÓN AUTH0
 			src/app/components/navbar/navbar.component.html
 
 	
+	COMENZANDO CON AUTHO - COMPONENTES Y SERVICIOS
+
+		1. Crear una cuenta con las siguientes configuraciones
+			Configuraciones:
+				- dabanto
+				- personal
+				- developer
+				- just playing around
+			https://auth0.com/
+
+		2. Crear un cliente
+			- authapp
+			- single page web applications
+			- angular2+
+
+		3. Instalar el auth0.js dentro de la aplicación
+			- npm install --save auth0-js
+
+		4. Agregar la referencia al fichero *index.html
+			<script src="https://cdn.auth0.com/js/auth0/8.8/auth0.min.js"></script>
+
+		5. Crear el fichero *AuthService (servicio)
+			ng g s services/auth
+			
+		6. Importar el servicio al modulo del componente principal
+			 src/app/app.module.ts
+		
+		7. Copiar el codigo  de la web a de auth0 en el fichero *auth.service.ts
+		
+		8. Importar el servicio en el componente *navbar, añadirlo como parametro
+			en el constructor y crear el metodo *login
+		
+		9. Crear un boton en la vista del *navbar que llame a la funcion *login
+
+		10. Realizar las siguientes configuraciones en el cliente:
+			- Allowed Callback URLs : http://localhost:4200/callback
+
+		11. LOG IN WITH GOOGLE
+
+
 	
 
 
@@ -50,6 +90,16 @@ APLICACIÓN #5: APLICACIÓN CON AUTENTICACIÓN AUTH0
 
 
 
+
+
+
+
+
+
+
+
+
+	
 
 
 
