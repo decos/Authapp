@@ -82,11 +82,24 @@ APLICACIÓN #5: APLICACIÓN CON AUTENTICACIÓN AUTH0
 
 	CONFIGURACIONES EN AUTH0 DASHBOARD Y USO DEL SERVICIO
 
-		1.
+		1. Agregar metodos adicionales, desde la pagina web, a nuestro servicio
+
+			- handleAuthentication : establece que vamos a usar el servicio
+			- setSession : grabar en el localstorage variables que vienen 
+				en el servicio
+			- logout : salir, elimina variables del localstorage y navega al home
+			- isAuthenticated : saber cuando el usuario esta autenticado o no
+
+		2. Agregar el boton *Salir en la vista del navbar y añadir condicionales
+			para definir que boton mostrar dependiendo si esta AUTENTICADO o no
+
+		3. Añadir la siguiente linea en el contructor del componente navbar
+			- auth.handleAuthentication();
+		
+		4. Añadir el metodo *salir al componente *navbar
 
 
-
-
+	
 
 
 
