@@ -132,7 +132,20 @@ APLICACIÓN #5: APLICACIÓN CON AUTENTICACIÓN AUTH0
 			http://localhost:4200/protegida
 
 
-	
+	OBTENIENDO EL PERFIL DEL USUARIO QUE INICIO SESION
+		
+		- En la documentacion de Auth0 podemos encontrar lo siguiente:
+			https://auth0.com/docs/quickstart/spa/angular2/02-user-profile
+
+		1. En el servicio *AuthService, añadir al *scope la palabra *profile
+			src/app/services/auth/auth.service.ts
+
+		2. Añadir un metodo llamado *getProfile y una propiedad llamada *userProfile
+			de tipo any al servicio antes mencionado
+
+		3. Codear el componente *Protegida
+
+		4. Codear en la vista del componente *Protegida lo que nos devuelve en json
 
 
 
