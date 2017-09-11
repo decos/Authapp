@@ -99,6 +99,48 @@ APLICACIÓN #5: APLICACIÓN CON AUTENTICACIÓN AUTH0
 		4. Añadir el metodo *salir al componente *navbar
 
 
+	SERVICIO DE BLOQUEO CanActivate - AuthGuard
+
+		- Implementar medida de seguridad para que el usuario no pueda entrar 
+			a la vista PROTEGIDA aunque el usuario conosca la ruta
+
+		1. Añadir al enlace *Portegida, vista del navbar lo siguiente:
+			*ngIf="!auth.isAuthenticated()"
+
+		2. Crear el servicio *authGuard
+			ng g s services/authGuard
+
+		3. Importar el servicio al modulo principal y añadirlo en providers
+
+		4. Importar en el servicio lo siguiente:
+			- import { Router, 
+				ActivatedRouteSnapshot,
+				RouterStateSnapshot,
+				CanActivate
+			      } from "@angular/router";
+
+			- Para ver si la persona esta autenticada
+				import { AuthService } from '../auth/auth.service';
+
+		5. Codear el servicio *AuthGuardService
+
+		6. Importar el servicio *AuthGuardService  en el fichero *app.routes
+			y añadir el campo *canActivate junto con el servicio (valor)
+			en la ruta *Protegida
+
+		7. Tratar de ingresar sin estar autenticado:
+			http://localhost:4200/protegida
+
+
+	
+
+
+
+
+
+
+
+
 	
 
 
@@ -111,10 +153,6 @@ APLICACIÓN #5: APLICACIÓN CON AUTENTICACIÓN AUTH0
 
 
 
-
-
-
-	
 
 
 
